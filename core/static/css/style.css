@@ -433,20 +433,22 @@ section {
 }
 
 @media (max-width: 576px) {
-  #evento h3 {
-    font-size: 20px;
-    padding:0 5% 0 5%;
+  .evento .content h3 {
+    padding:0 5px 0 5px;
+    font-size: 18px;
   }
-  #evento p{
+  
+  #evento p {
     text-align: justify;
+    font-size: 14px;
   }
-  #evento .fst-italic{
-    padding:0 5% 0 5%;
+  #evento .fst-italic {
+    padding:0 5px 0 5px;
   }
-  #evento #comentario{
-    padding:0 5% 0 5%;
+  #evento #comentario {
+    padding:0 5px 0 5px;
   }
-  #evento .section-title p{
+  #evento .section-title p {
     hyphens: auto;
     font-size: 14px;
     text-align: center;
@@ -630,7 +632,7 @@ section {
   #why-us h3 {
     text-align: center;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
   }
   .why-us .content h4 {
     hyphens: auto;
@@ -645,7 +647,7 @@ section {
     text-align: justify;
   }
   #why-us .accordion-list a {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     font-weight: 500;
     padding-right: 30px;
@@ -701,6 +703,12 @@ section {
   background-size: cover;
   min-height: 320px;
 }
+@media (max-width: 576px){
+  .atracoes .section-title p {
+    font-size: 14px;
+    text-align: justify;
+  }
+}
 
 /*--------------------------------------------------------------
 # racas
@@ -744,8 +752,18 @@ section {
   -webkit-animation: slide-down 0.5s ease-out;
   animation: slide-down 0.5s ease-out;
 }
+@media(max-width: 576px){
+  #racas .section-title p {
+    font-size: 12px;
+  }
+  .racas .nav-link p {
+    hyphens: auto;
+    text-align: justify;
+    font-size: 14px;
+  }
+}
 @media(max-width: 768px){
-  #racas img{
+  #racas img {
     width: 100%;
     height: auto;
   }
@@ -907,6 +925,13 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
   bottom: 15px;
   right: 15px;
+}
+@media(max-width: 576px){
+  #portfolio p {
+    padding: 0 5px 0 5px;
+    text-align: justify;
+    font-size: 14px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1073,8 +1098,17 @@ section {
     padding: 40px 0;
   }
   .contato .info h4 {
-    font-size: 18px;
+    font-size: 16px;
   }
+  .contato .section-title p {
+    font-size: 14px;
+    text-align: justify;
+  }
+  .contato .row p {
+    font-size: 12px;
+    text-align: justify;
+  }
+  
 }
 @media (max-width: 768px){
   #mapa iframe{
@@ -1129,7 +1163,6 @@ section {
   background: url("../img/footerbg.jpg") center center no-repeat;
   background-size:100% 100%;
   color: #fff;
-  font-size: 14px;
   position: relative;
 }
 #footer::before {
@@ -1161,7 +1194,7 @@ section {
   margin-bottom: 0;
 }
 #footer .footer-top p {
-  font-size: 15;
+  font-size: 14px;
   font-style: italic;
   margin: 30px 0 0 0;
   padding: 0;
@@ -1237,4 +1270,13 @@ section {
   text-align: center;
   font-size: 13px;
   padding-top: 5px;
+}
+@media (max-width: 576px){
+  #footer .footer-top h3 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  #footer .footer-top p {
+    font-size: 12px;
+  }
 }

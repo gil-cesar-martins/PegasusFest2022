@@ -71,7 +71,7 @@ WSGI_APPLICATION = 'pegasusfest.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '<nome_do_banco_de_dados>',
+        'NAME': '<banco_de_dados>',
         'USER': '<usuario_do_banco>',                  # Digite o nome do usuário do banco de dados
         'PASSWORD': '<senha>',                         #Digite a senha
         'HOST': 'localhost',
@@ -125,7 +125,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Email teste console (Desmarque o EMAIL_BACKEND abaixo quando estiver desenvolvendo localmente)
-# EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend'
+#EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend'
 
 """
 # Email produção
