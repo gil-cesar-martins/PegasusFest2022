@@ -1,0 +1,152 @@
+{% load static %}
+<section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Galeria</h2>
+        <p>Acompanhe as três últimas edições do evento. Lembrando que as ediçoes 2020 e 2021 foram canceladas devido à pandemia.</p>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">TODAS</li>
+            <li data-filter=".filter-app">2017</li>
+            <li data-filter=".filter-card">2018</li>
+            <li data-filter=".filter-web">2019</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/portfolio1.jpg' %}" class="img-fluid" alt="portfolio1">
+            <div class="portfolio-info">
+              <h4>2017</h4>
+              <p>Paisagem 1</p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/portfolio1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="2017 | 01"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details1' %}" title="Mais detalhes"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/portfolio2.jpg' %}" class="img-fluid" alt="portfolio2">
+            <div class="portfolio-info">
+              <h4>2019</h4>
+              <p>Paisagem 1</p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/portfolio2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="2019 | 01"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details3' %}" title="Mais detalhes"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/portfolio3.jpg' %}" class="img-fluid" alt="portfolio3">
+            <div class="portfolio-info">
+              <h4>2017</h4>
+              <p>Paisagem 2</p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/portfolio3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="2017 | 02"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details1' %}" title="Mais detalhes"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/portfolio4.jpg' %}" class="img-fluid" alt="portfolio4">
+            <div class="portfolio-info">
+              <h4>2018</h4>
+              <p>Paisagem 2</p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/portfolio4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="2018 | 02"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details2' %}" title="Mais detalhes"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/portfolio5.jpg' %}" class="img-fluid" alt="portfolio5">
+            <div class="portfolio-info">
+              <h4>2019</h4>
+              <p>Paisagem 2</p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/portfolio5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="2019 | 02"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details3' %}" title="Mais detalhes"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/portfolio6.jpg' %}" class="img-fluid" alt="portfolio6">
+            <div class="portfolio-info">
+              <h4>2017</h4>
+              <p>Paisagem 3</p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/portfolio6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="2017 | 03"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details1' %}" title="Mais detalhes"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/portfolio7.jpg' %}" class="img-fluid" alt="portfolio7">
+            <div class="portfolio-info">
+              <h4>2018</h4>
+              <p>Paisagem 1</p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/portfolio7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="2018 | 01"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details2' %}" title="Mais detalhes"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/portfolio9.jpg' %}" class="img-fluid" alt="portfolio8">
+            <div class="portfolio-info">
+              <h4>2019</h4>
+              <p>Paisagem 3</p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/portfolio9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="2019 | 03"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details3' %}" title="Mais detalhes"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'img/portfolio/portfolio8.jpg' %}" class="img-fluid" alt="portfolio9">
+            <div class="portfolio-info">
+              <h4>2018</h4>
+              <p>Paisagem 3</p>
+              <div class="portfolio-links">
+                <a href="{% static 'img/portfolio/portfolio8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="2018 | 03"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio-details2' %}" title="Mais detalhes"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+</section>

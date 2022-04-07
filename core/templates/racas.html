@@ -1,0 +1,66 @@
+{% load static %}
+<section id="racas" class="racas">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Raças de Cavalos</h2>
+        <p>As principais raças que os cavaleiros e amazonas apreciam.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="tab-content">
+            <div class="tab-pane active show" id="tab-1">
+              <figure>
+                <img src="{% static 'img/raca1.jpg' %}" alt="manga-larga-marchador" class="img-fluid">
+              </figure>
+            </div>
+            <div class="tab-pane" id="tab-2">
+              <figure>
+                <img src="{% static 'img/raca2.jpg' %}" alt="" class="img-fluid">
+              </figure>
+            </div>
+            <div class="tab-pane" id="tab-3">
+              <figure>
+                <img src="{% static 'img/raca3.jpg' %}" alt="" class="img-fluid">
+              </figure>
+            </div>
+            <div class="tab-pane" id="tab-4">
+              <figure>
+                <img src="{% static 'img/raca4.jpg' %}" alt="" class="img-fluid">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+          <ul class="nav nav-tabs flex-column">
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+                <h4>Manga Larga Marchador</h4>
+                <p>Uma das raças mais conhecidas e procuradas.</p>
+              </a>
+            </li>
+            <li class="nav-item mt-2">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                <h4>Árabe</h4>
+                <p>Animais imponentes e velozes.</p>
+              </a>
+            </li>
+            <li class="nav-item mt-2">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                <h4>Pampa</h4>
+                <p>Famosos nos filmes de faroeste.</p>
+              </a>
+            </li>
+            <li class="nav-item mt-2">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+                <h4>Gipsy Vanner</h4>
+                <p>A belíssima pelagem dispensa comentários.</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+</section>

@@ -1,0 +1,58 @@
+{% load static %}
+<footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <a href="#header" class="scrollto footer-logo"><img src="{% static 'img/hero-logo.png' %}" alt="logo"></a>
+            <h3>PegasusFest 2022</h3>
+            <p>
+              O maior evento de cavalgada da região volta com tudo!<br>
+              Deixe o e-mail aqui e mantenha-se informado(a)!
+            </p>
+
+          </div>
+        </div>
+
+        <div class="row footer-newsletter justify-content-center">
+          <div class="col-lg-6">
+            <form id="contato" action="{% url 'index' %}" method="post">
+              {% csrf_token %}
+              <input type="email" id="email" name="email" placeholder="Digite o seu e-mail"><input type="submit" value="Enviar">
+            </form>
+          </div>
+        </div>
+
+        <div class="container">
+          {% if messages %}
+            {% for m in messages %}
+              <div class="alert alert-{{ m.tags }}">
+                <button type="button" class="close" data-dimiss="alert"></button>
+                <strong>{{ m }}</strong>
+              </div>
+            {% endfor %}
+          {% endif %}
+        </div>
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>PegasusFest 2022</span></strong>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">Gil César</a>
+      </div>
+    </div>
+</footer>

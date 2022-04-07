@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Evento Section ======= -->
+      {% include 'evento.html' %}
+    <!-- End Evento Section -->
+
+    <!-- ======= Why-Us Section ======= -->
+      {% include 'why-us.html' %}
+    <!-- End Why Us Section -->
+
+    <!-- ======= Atrações Section ======= -->
+      {% include 'atracoes.html' %}
+    <!-- End Atrações Section -->
+
+    <!-- ======= Raças Section ======= -->
+      {% include 'racas.html' %}
+    <!-- End Raças Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+      {% include 'galeria.html' %}
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Clients Section ======= -->
+      {% include 'patrocinadores.html' %}
+    <!-- End Clients Section -->
+
+    <!-- ======= Contact Section ======= -->
+      {% include 'contato.html' %}
+    <!-- End Contact Section -->
+
+  </main>
+  <!-- ======= Footer ======= -->
+    {% include 'footer.html' %}
+  <!-- End Footer -->
+{% endblock %}
+  
