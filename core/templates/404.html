@@ -36,9 +36,9 @@
   <section id="hero">
     <div class="hero-container">
       <a href="{% url 'index' %}" class="hero-logo" data-aos="zoom-in"><img src="{% static 'img/hero-logo.png' %}" alt="logo"></a>
-      <h1 data-aos="zoom-in">Erro - 400</h1>
+      <h1 data-aos="zoom-in">Erro - 404</h1>
       <h2 data-aos="fade-up">Ops... Esse é apenas um app de portfolio.</h2>
-      <a data-aos="fade-up" data-aos-delay="200" href="{url 'index'}" class="btn-get-started scrollto">Voltar à pagina inicial</a>
+      <a data-aos="fade-up" data-aos-delay="200" href="{% url 'index' %}" class="btn-get-started scrollto">Voltar à pagina inicial</a>
     </div>
   </section><!-- End Hero -->
 
