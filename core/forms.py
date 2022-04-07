@@ -12,8 +12,8 @@ class ContatoForm(forms.Form):
         conteudo = f'Email: {email}\n'
         
         mail = EmailMessage(
-            from_email='bilu@gmail.com.br',
-            to=['bilu@gmail.com.br',],
+            from_email='pegasusfest2022@gmail.com.br',
+            to=['pegasusfest@gmail.com.br',],
             headers={'Reply-To':email}
         )
         mail.send()   
