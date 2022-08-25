@@ -44,5 +44,5 @@ Para acessar vá no seu navegador e  digite [http://localhost:8000](http://local
 
 ### Link do app :
 
-https://ismael-luthier.herokuapp.com/
+https://pegasusfest2022.herokuapp.com/
 
